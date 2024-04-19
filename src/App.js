@@ -13,8 +13,11 @@ import {
 import Home from './Pages/Home';
 import Login from './features/auth/components/Login';
 import Signup from './features/auth/components/Signup';
-import Cart from './features/cart/Cart';
+
 import CartPage from './Pages/CartPage';
+import CheckOut from './Pages/CheckOut';
+
+import ProductDetailsPage from './Pages/ProductDetailsPage';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,14 @@ const router = createBrowserRouter([
   {
     path: "/Cart",
     element: (<CartPage></CartPage>),
+  },
+  {
+    path: "/CheckOut",
+    element: (<CheckOut></CheckOut>),
+  },
+  {
+    path: "/Product-Details-Page",
+    element: (<ProductDetailsPage></ProductDetailsPage>),
   },
  
 ]);
